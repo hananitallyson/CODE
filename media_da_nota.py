@@ -15,9 +15,9 @@ while nota3 > 10:
 
 nota_final = (nota1 + nota2 + nota3) / 3
 
-print("Sua nota final é: ", round(nota_final, 2))
+print("\nSua nota final é: ", round(nota_final, 2))
 
 if nota_final >= 7:
-    print("Aprovado!")
+    print("Aprovado!\n")
 else:
-    print("Reprovado!")
+    print("Reprovado!\n")
