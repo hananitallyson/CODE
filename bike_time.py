@@ -9,6 +9,6 @@ tempo = tempo_hora + tempo_min / 60
 velocidade_km = dist / tempo
 velocidade_ms = velocidade_km / 3.6
 
-print("Velocidade média do ciclista (Km/h): %.2f Km/h"%velocidade_km)
+print("Velocidade média do ciclista (km/h): %.2f Km/h"%velocidade_km)
 print("Velocidade média do ciclista (m/s): %.2f m/s"%velocidade_ms)
 
