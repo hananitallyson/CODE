@@ -8,8 +8,18 @@ def gen_binary(n):
 
 print("Welcome to Binary Guesser!\n")
 game = True
+total_bits = 0
 
-total_bits = 4
+while total_bits == 0:
+    print("Choose a game mode:\n1 -> 4 bits combination\n2 -> 8 bits combination")
+    gamemode = input("\nEnter the mode: ")
+
+    if gamemode == '1':
+        total_bits = 4
+    elif gamemode == '2':
+        total_bits = 8
+    else:
+        print("The answer must be 1 or 2; any other value will result in an error. Please try again!")
 
 while game == True:
     binary_to_guess = gen_binary(total_bits)
