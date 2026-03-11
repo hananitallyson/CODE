@@ -19,7 +19,7 @@ while total_bits == 0:
     elif gamemode == '2':
         total_bits = 8
     else:
-        print("The answer must be 1 or 2; any other value will result in an error. Please try again!")
+        print("\nThe gamemode must be 1 or 2.\nAny other value will result in an ERROR. Please try again!\n")
 
 while game == True:
     binary_to_guess = gen_binary(total_bits)
