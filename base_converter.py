@@ -1,9 +1,13 @@
 def to_base(n, base):
+    if base < 2 or base > 36:
+        print("Base must be between 2 and 36.")
     if n == 0:
-        return "0"  
+        return "0"
+    symbols = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     digits = ""
     while n:
-        digits += str(n % base)
+        remainder = n % base
+        digits += symbols[remainder]
         n //= base
     return digits[::-1]
 
@@ -21,6 +25,6 @@ match target_base:
     case 8:
         print(target_num, "in octal is:", format(target_num, "0o"), "\n")
     case 16:
-        print(target_num, "in hexadecimal is:", format(target_num, "0x"), "\n")
+        print(target_num, "in hexadecimal is:", format(target_num, "0X"), "\n")
     case _:
         print(target_num, "in base", target_base, "is:", to_base(target_num, target_base), "\n")
