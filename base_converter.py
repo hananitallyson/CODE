@@ -1,3 +1,5 @@
+import subprocess
+
 def convert_base(n, from_base, to_base):
     if to_base < 2 or to_base > 36:
         print("Base must be between 2 and 36.")
@@ -14,7 +16,7 @@ def convert_base(n, from_base, to_base):
     return digits[::-1]
 
 print("\nWelcome to Base Converter!")
-print("Type 'exit' to exit the converter.\n")
+print("Type 'exit' to exit the converter or type 'clear' to clear the terminal.\n")
 main = True
 
 while main == True:
@@ -23,6 +25,8 @@ while main == True:
     if num_list == "exit":
         print("")
         main = False
+    elif num_list == "clear":
+        subprocess.run(num_list)
     else:
         num_list = num_list.split(" ")
         
