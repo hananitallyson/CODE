@@ -34,5 +34,12 @@ while main == True:
             target_num = num_list[0]
             inicial_base = int(num_list[1])
             target_base = int(num_list[2])
-        
-        print(f"{target_num} (base {inicial_base}) -> {convert_base(target_num, inicial_base, target_base)} (base {target_base})\n")
+
+        if target_base == 2:
+            print(f"{target_num} (base {inicial_base}) -> {convert_base(target_num, inicial_base, target_base)} (base {target_base}, i.e. binary)\n")
+        elif target_base == 8:
+            print(f"{target_num} (base {inicial_base}) -> {convert_base(target_num, inicial_base, target_base)} (base {target_base}, i.e. octal)\n")
+        elif target_base == 16:
+            print(f"{target_num} (base {inicial_base}) -> {convert_base(target_num, inicial_base, target_base)} (base {target_base}, i.e. hexadecimal)\n")
+        else:
+            print(f"{target_num} (base {inicial_base}) -> {convert_base(target_num, inicial_base, target_base)} (base {target_base})\n")
