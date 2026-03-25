@@ -14,9 +14,9 @@ current_year = int(current_date[2])
 
 this_year_age = current_year - year_of_birth
 
-if current_month < month_of_birth or (current_month == month_of_birth and current_day < day_of_birth):
-    print(f"Since it hasn't been her birthday yet, her age is {this_year_age - 1}.\n")
+if current_month == month_of_birth and current_day < day_of_birth or current_month < month_of_birth:
+    print(f"Since it hasn't been your birthday yet, your age is {this_year_age - 1}.\n")
 elif current_day == day_of_birth and current_month == month_of_birth:
     print(f"Happy Birthday! Today is {current_day}/{current_month:02}/{current_year}, your birthday, and your age is {this_year_age}.\n")
 else:
-    print(f"Since your birthday has already passed, your age is X. {this_year_age}.\n")
+    print(f"Since your birthday has already passed, your age is {this_year_age}.\n")
