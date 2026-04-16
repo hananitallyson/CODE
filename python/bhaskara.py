@@ -15,7 +15,7 @@ elif delta > 0:
     result_two = -b - math.sqrt(delta) / (2 * a)
     print(f"The possible values of X1 and X2, according to the quadratic formula, are: {result_one}, {result_two}.\n")
 elif delta == 0:
-    result = (-b) / (2 * a)
+    result = -b / (2 * a)
     print(f"Delta is equal to zero, so the value of x, according to the quadratic formula, is: {result}")
 else:
     print(f"\nDelta is {delta}, in other words, it is less than zero.")
