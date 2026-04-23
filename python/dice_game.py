@@ -9,9 +9,8 @@ while game_loop:
     player = random.randint(1,6)
     bot = random.randint(1,6)
 
-    print("-----------------------------------")
-
-    print(f"\nPlayer -> [{player}]")
+    print("\n-------- DICE GAME --------\n")
+    print(f"Player -> [{player}]")
     print(f"Bot -> [{bot}]")
 
     if player > bot:
