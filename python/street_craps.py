@@ -25,7 +25,7 @@ while game_loop:
     again_loop = True
     while again_loop:
         again = input("\nPlay again? (Y/n): ").upper()
-        if again == "N":
+        if again == "N" or again == "EXIT":
             again_loop = False
             game_loop = False
         elif again == "Y" or again == "":
