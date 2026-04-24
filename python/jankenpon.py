@@ -8,9 +8,12 @@ options = ["rock", "paper", "scissors"]
 
 while game_loop:
     player = ""
+    
+    print("\n-------- JANKENPON --------\n")
+
     choice_loop = True
     while choice_loop:
-        choice = input("\nChoose rock (r), paper (p), or scissors (s): ").lower()
+        choice = input("Choose rock (r), paper (p), or scissors (s): ").lower()
         if choice in ["r", "rock"]:
             player = "rock"
             choice_loop = False
@@ -25,8 +28,7 @@ while game_loop:
 
     bot = random.choice(options)
 
-    print("\n-------- JANKENPON --------\n")
-    print(f"Player -> [{player}] | Bot -> [{bot}]\n")
+    print(f"\nPlayer -> [{player}] | Bot -> [{bot}]\n")
 
     if player == bot:
         print("Tie!")
@@ -58,7 +60,7 @@ while game_loop:
 
     again_loop = True
     while again_loop:
-        again = input("\nPlay again? (Y/n): ").upper()
+        again = input("Play again? (Y/n): ").upper()
         if again == "N" or again == "EXIT":
             again_loop = False
             game_loop = False
