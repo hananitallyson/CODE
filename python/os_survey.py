@@ -59,4 +59,4 @@ elif macos_percentage == windows_percentage and macos_percentage > linux_percent
 elif linux_percentage == macos_percentage == windows_percentage and linux_percentage != 0:
     print(f"Linux @ {linux_percentage}% and MacOS @ {macos_percentage}% and Windows @ {windows_percentage}%\n")
 else:
-    print(f"{null_percentage}% of the votes were null.\n")
+    print(f"{null_percentage}% of the votes were null\n")
