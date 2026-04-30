@@ -37,9 +37,9 @@ print(f"\nTOTAL -> {total_votes} | Linux -> {linux_votes} @ {linux_percentage}% 
 
 print("\n[WINNER OS]")
 if linux_percentage > macos_votes:
-    print(f"Linux @ {linux_percentage}% of the votes")    
+    print(f"Linux @ {linux_percentage}% of the votes\n")    
 else:
     if macos_votes > windows_votes:
-        print(f"MacOS @ {macos_votes}% of the votes")        
+        print(f"MacOS @ {macos_votes}% of the votes\n")        
     else:
-        print(f"Windows @ {windows_percentage}% of the votes")
+        print(f"Windows @ {windows_percentage}% of the votes\n")
