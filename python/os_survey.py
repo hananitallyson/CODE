@@ -40,7 +40,7 @@ macos_percentage = round(macos_votes / total_votes * 100)
 windows_percentage = round(windows_votes / total_votes * 100)
 null_percentage = round(null_votes / total_votes * 100)
 
-print("\n--------------------------------- SURVEY RESULTS ---------------------------------")
+print("\n------------------------------------ SURVEY RESULTS ------------------------------------")
 print(f"\nTOTAL -> {total_votes} | NULL -> {null_votes} @ {null_percentage}% | Linux -> {linux_votes} @ {linux_percentage}% | MacOS -> {macos_votes} @ {macos_percentage}% | Windows -> {windows_votes} @ {windows_percentage}%\n")
 
 print("[WINNER OS]")
