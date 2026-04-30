@@ -33,14 +33,15 @@ while vote_loop == "Y" or vote_loop == "":
     vote_loop = input("\nWould you like to respond to the survey?\nEnter your answer (Y/n): ").upper()
     subprocess.run("clear")
 
-total_votes = linux_votes + macos_votes + windows_votes
+total_votes = linux_votes + macos_votes + windows_votes + null_votes
 
 linux_percentage = round(linux_votes / total_votes * 100)
 macos_percentage = round(macos_votes / total_votes * 100)
 windows_percentage = round(windows_votes / total_votes * 100)
+null_percentage = round(null_votes / total_votes * 100)
 
 print("\n--------------------------------- SURVEY RESULTS ---------------------------------")
-print(f"\nTOTAL -> {total_votes} | NULL -> {null_votes} | Linux -> {linux_votes} @ {linux_percentage}% | MacOS -> {macos_votes} @ {macos_percentage}% | Windows -> {windows_votes} @ {windows_percentage}%\n")
+print(f"\nTOTAL -> {total_votes} | NULL -> {null_votes} @ {null_percentage}% | Linux -> {linux_votes} @ {linux_percentage}% | MacOS -> {macos_votes} @ {macos_percentage}% | Windows -> {windows_votes} @ {windows_percentage}%\n")
 
 print("[WINNER OS]")
 if linux_percentage > macos_percentage and linux_percentage > windows_percentage:
@@ -55,5 +56,7 @@ elif linux_percentage == windows_percentage and linux_percentage > macos_percent
     print(f"Linux @ {linux_percentage}% and Windows @ {windows_percentage}%\n")
 elif macos_percentage == windows_percentage and macos_percentage > linux_percentage:
     print(f"MacOS @ {macos_percentage}% and Windows @ {windows_percentage}%\n")
-else:
+elif linux_percentage == macos_percentage == windows_percentage and linux_percentage != 0:
     print(f"Linux @ {linux_percentage}% and MacOS @ {macos_percentage}% and Windows @ {windows_percentage}%\n")
+else:
+    print(f"Null @ {null_percentage}%\n")
