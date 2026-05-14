@@ -3,7 +3,7 @@ matrix = [[11, 22, 33], [44, 55, 66], [77, 88, 99]]
 row_length = len(matrix)
 columns_length = len(matrix[0])
 
-print("\nNOMINAL MATRIX ----------------")
+print("\nNOMINAL MATRIX ------------------")
 for row in range(row_length):
     print(f"ROW({row}):")
     for column in range(columns_length):
