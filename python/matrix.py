@@ -1,4 +1,4 @@
-matrix = [[10, 20, 30], [40, 50, 60], [70, 80, 90]]
+matrix = [[11, 22, 33], [44, 55, 66], [77, 88, 99]]
 
 row_length = len(matrix)
 columns_length = len(matrix[0])
