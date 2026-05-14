@@ -7,7 +7,7 @@ print(" ")
 for row in range(row_length):
     print(f"ROW({row}):")
     for columns in range(columns_length):
-        print(f"[{matrix[row][columns]}]", end=", ")
+        print(f"({row},{columns}) <- [{matrix[row][columns]}]", end=" | ")
         print(
             f"K: {row} * {columns_length} + {columns} -> {row * columns_length + columns}"
         )
